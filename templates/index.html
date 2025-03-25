@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <h1 class="mb-4">Welcome to the Movies App</h1>
+        <p class="lead">This is a simple FastAPI application that demonstrates both web pages and API endpoints.</p>
+
+        <div class="card mt-4">
+            <div class="card-header">
+                API Endpoints
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Available API endpoints:</h5>
+                <ul>
+                    <li><code>GET /api/movies/</code> - Get all movies</li>
+                    <li><code>GET /api/movies/{movie_id}</code> - Get a specific movie</li>
+                    <li><code>POST /api/movies/</code> - Create a new movie</li>
+                </ul>
+                <a href="/docs" class="btn btn-primary">API Documentation</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

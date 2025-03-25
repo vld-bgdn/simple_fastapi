@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <h1 class="mb-4">About this site</h1>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                About the site
+            </div>
+            <div class="card-body">
+                <p>{{ site_info }}</p>
+                <p>This application was built with:</p>
+                <ul>
+                    <li>FastAPI - A modern, fast web framework for building APIs with Python</li>
+                    <li>Jinja2 - A full-featured template engine for Python</li>
+                    <li>Bootstrap 5 - A popular CSS framework for building responsive websites</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                About the developer
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{ developer }}</h5>
+                <p>{{ developer_info }}</p>
+                <a href="https://github.com/vld-bgdn" class="btn btn-outline-primary">GitHub Profile</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
